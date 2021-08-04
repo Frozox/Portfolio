@@ -1,3 +1,69 @@
 {
-  "main": {}
+  "main": {
+    "name": "Tom Cuillandre",
+    "occupation": "BLS",
+    "description": "",
+    "jobDescription": "",
+    "image": "assets/img/profile-img.jpg",
+    "bio": "",
+    "contactmessage": "",
+    "email": "tom.cuillandre@sfr.fr",
+    "phone": "+33 6 30 32 12 29",
+    "address": {
+      "city": "Versailles",
+      "state": "Île-de-France",
+      "zip": "78000"
+    },
+    "website": "",
+    "resumedownload": "",
+    "social": [
+      {
+        "name": "linkedin",
+        "className": "bx bxl-linkedin",
+        "url": "https://www.linkedin.com/in/tom-cuillandre-3112a3170"
+      },
+      {
+        "name": "github",
+        "className": "bx bxl-github",
+        "url": "https://github.com/Frozox"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "name": "Home",
+      "className": "bx bx-home",
+      "url": "#hero"
+    },
+    {
+      "name": "À Propos",
+      "className": "bx bx-user",
+      "url": "#about"
+    },
+    {
+      "name": "Résumé",
+      "className": "bx bx-file-blank",
+      "url": "#resume"
+    },
+    {
+      "name": "Portfolio",
+      "className": "bx bx-book-content",
+      "url": "#portfolio"
+    },
+    {
+      "name": "Services",
+      "className": "bx bx-server",
+      "url": "#services"
+    },
+    {
+      "name": "Témoignages",
+      "className": "bx bx-conversation",
+      "url": "#testimonials"
+    },
+    {
+      "name": "Contact",
+      "className": "bx bx-envelope",
+      "url": "#contact"
+    }
+  ]
 }

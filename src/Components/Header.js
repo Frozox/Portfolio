@@ -3,36 +3,45 @@ import React, { Component } from 'react';
 class Header extends Component {
    render() {
 
-      if (this.props.data) {
+      if (this.props.data.main && this.props.data.nav) {
+         var name = this.props.data.main.name;
+         var image = this.props.data.main.image;
+         var networks = this.props.data.main.social.map(network => {
+            return <a href={network.url} className={network.name}><i className={network.className}></i></a>
+         });
+         var nav = this.props.data.nav.map((nav, i) => {
+            if (i === 0) {
+               return <li><a href={nav.url} className="nav-link scrollto active"><i className={nav.className}></i><span>{nav.name}</span></a></li>
+            } else {
+               return <li><a href={nav.url} className="nav-link scrollto"><i className={nav.className}></i><span>{nav.name}</span></a></li>
+            }
+         });
       }
       return (
          <header id="header">
-            <div class="d-flex flex-column">
-               <div class="profile">
-                  <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" />
-                  <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
-                  <div class="social-links mt-3 text-center">
-                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                     <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                     <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div className="d-flex flex-column">
+               <div className="profile">
+                  <img src={image} alt="" className="img-fluid rounded-circle" />
+                  <h1 className="text-light"><a href="index.html">{name}</a></h1>
+                  <div className="social-links mt-3 text-center">
+                     {networks}
                   </div>
                </div>
-               <nav id="navbar" class="nav-menu navbar">
+               <nav id="navbar" className="nav-menu navbar">
                   <ul>
-                     <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                     {nav}
+                     {/* <li><a href="#hero" className="nav-link scrollto active"><i className="bx bx-home"></i>
                         <span>Home</span></a></li>
-                     <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                     <li><a href="#about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>À propos</span></a>
                      </li>
-                     <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
-                        <span>Resume</span></a></li>
-                     <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                     <li><a href="#resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i>
+                        <span>Résumé</span></a></li>
+                     <li><a href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i>
                         <span>Portfolio</span></a></li>
-                     <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                     <li><a href="#services" className="nav-link scrollto"><i className="bx bx-server"></i>
                         <span>Services</span></a></li>
-                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-                        <span>Contact</span></a></li>
+                     <li><a href="#contact" className="nav-link scrollto"><i className="bx bx-envelope"></i>
+                        <span>Contact</span></a></li> */}
                   </ul>
                </nav>
             </div>

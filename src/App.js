@@ -9,13 +9,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foo: 'bar',
-      Data: {}
+      data: {}
     };
 
     ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
-
   }
 
   getData() {
@@ -24,7 +22,7 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: function (data) {
-        this.setState({ Data: data });
+        this.setState({ data: data });
       }.bind(this),
       error: function (xhr, status, err) {
         console.log(err);
@@ -40,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.Data.main} />
+        <Header data={{ main: this.state.data.main, nav: this.state.data.nav }} />
       </div>
     );
   }
