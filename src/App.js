@@ -3,6 +3,7 @@ import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
+import Hero from './Components/Hero';
 
 class App extends Component {
 
@@ -39,6 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={{ main: this.state.data.main, nav: this.state.data.nav }} />
+        <Hero data={this.state.data.main} />
       </div>
     );
   }

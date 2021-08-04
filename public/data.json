@@ -5,6 +5,7 @@
     "description": "",
     "jobDescription": "",
     "image": "assets/img/profile-img.jpg",
+    "backgroundImage": "",
     "bio": "",
     "contactmessage": "",
     "email": "tom.cuillandre@sfr.fr",
@@ -16,6 +17,12 @@
     },
     "website": "",
     "resumedownload": "",
+    "hero": [
+      "Designer",
+      "Développeur ",
+      "Freelancer",
+      "Photographe"
+    ],
     "social": [
       {
         "name": "linkedin",
