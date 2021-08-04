@@ -1,12 +1,15 @@
 {
   "main": {
     "name": "Tom Cuillandre",
+    "birthday": "29 Juin 2000",
+    "age": 21,
+    "degree": "licence PRISM",
     "occupation": "BLS",
-    "description": "",
-    "jobDescription": "",
+    "entitled": "Développeur Full stack Web/Mobile.",
+    "description": "'Description'",
+    "bio": "'biographie'",
     "image": "assets/img/profile-img.jpg",
     "backgroundImage": "",
-    "bio": "",
     "contactmessage": "",
     "email": "tom.cuillandre@sfr.fr",
     "phone": "+33 6 30 32 12 29",
@@ -15,7 +18,7 @@
       "state": "Île-de-France",
       "zip": "78000"
     },
-    "website": "",
+    "website": "https://www.frozox.fr",
     "resumedownload": "",
     "hero": [
       "Designer",

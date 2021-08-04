@@ -4,6 +4,7 @@ import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
+import About from './Components/About';
 
 class App extends Component {
 
@@ -39,8 +40,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
         <Header data={{ main: this.state.data.main, nav: this.state.data.nav }} />
         <Hero data={this.state.data.main} />
+        <div id="main">
+          <About data={this.state.data.main} />
+        </div>
       </div>
     );
   }
