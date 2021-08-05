@@ -13,6 +13,21 @@
     "contactmessage": "",
     "email": "tom.cuillandre@sfr.fr",
     "phone": "+33 6 30 32 12 29",
+    "skillsdesc": "'skills description'",
+    "skills": [
+      {
+        "name": "HTML",
+        "percent": 80
+      },
+      {
+        "name": "PHP",
+        "percent": 90
+      },
+      {
+        "name": "SQL",
+        "percent": 70
+      }
+    ],
     "address": {
       "city": "Versailles",
       "state": "Île-de-France",
@@ -38,42 +53,5 @@
         "url": "https://github.com/Frozox"
       }
     ]
-  },
-  "nav": [
-    {
-      "name": "Home",
-      "className": "bx bx-home",
-      "url": "#hero"
-    },
-    {
-      "name": "À Propos",
-      "className": "bx bx-user",
-      "url": "#about"
-    },
-    {
-      "name": "Résumé",
-      "className": "bx bx-file-blank",
-      "url": "#resume"
-    },
-    {
-      "name": "Portfolio",
-      "className": "bx bx-book-content",
-      "url": "#portfolio"
-    },
-    {
-      "name": "Services",
-      "className": "bx bx-server",
-      "url": "#services"
-    },
-    {
-      "name": "Témoignages",
-      "className": "bx bx-conversation",
-      "url": "#testimonials"
-    },
-    {
-      "name": "Contact",
-      "className": "bx bx-envelope",
-      "url": "#contact"
-    }
-  ]
+  }
 }

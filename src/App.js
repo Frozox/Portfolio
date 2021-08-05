@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
+import { Helmet } from 'react-helmet';
 import $ from 'jquery';
 import './App.css';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
-import About from './Components/About';
 
+import Header from './Components/Header';
+import Home from './Components/Home';
+import About from './Components/About';
+import Facts from './Components/Facts';
+import Skills from './Components/Skills';
+import Resume from './Components/Resume';
+import Portfolio from './Components/Portfolio';
+import Services from './Components/Services';
+import Testimonials from './Components/Testimonials';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 class App extends Component {
 
   constructor(props) {
@@ -20,7 +29,7 @@ class App extends Component {
 
   getData() {
     $.ajax({
-      url: '/Data.json',
+      url: '/data.json',
       dataType: 'json',
       cache: false,
       success: function (data) {
@@ -40,12 +49,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-        <Header data={{ main: this.state.data.main, nav: this.state.data.nav }} />
-        <Hero data={this.state.data.main} />
+        <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+        <Header data={this.state.data.main} />
+        <Home data={this.state.data.main} />
         <div id="main">
           <About data={this.state.data.main} />
+          {/* <Facts /> */}
+          <Skills data={this.state.data.main} />
+          <Resume />
+          <Portfolio />
+          <Services />
+          <Testimonials />
+          <Contact />
         </div>
+        <Footer />
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+        <Helmet>
+          <script src="assets/vendor/purecounter/purecounter.js"></script>
+          <script src="assets/vendor/typed.js/typed.min.js"></script>
+          <script src="assets/js/main.js"></script>
+        </Helmet>
       </div>
     );
   }
