@@ -56,15 +56,15 @@ class App extends Component {
           <About data={this.state.data.main} />
           {/* <Facts /> */}
           <Skills data={this.state.data.main} />
-          <Resume />
+          <Resume data={this.state.data.resume} />
           <Portfolio />
-          <Services />
+          {/* <Services /> */}
           <Testimonials />
           <Contact />
         </div>
         <Footer />
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-          class="bi bi-arrow-up-short"></i></a>
+        <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i
+          className="bi bi-arrow-up-short"></i></a>
         <Helmet>
           <script src="assets/vendor/purecounter/purecounter.js"></script>
           <script src="assets/vendor/typed.js/typed.min.js"></script>

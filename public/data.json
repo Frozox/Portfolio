@@ -53,5 +53,26 @@
         "url": "https://github.com/Frozox"
       }
     ]
+  },
+  "resume": {
+    "description": "'description résumé'",
+    "sumary": {},
+    "education": [],
+    "professional": []
+  },
+  "portfolio": {
+    "description": "'description portfolio'",
+    "projets": []
+  },
+  "testimonials": {
+    "description": "témoignages description",
+    "comments": [
+      {
+        "texte": "1er commentaire",
+        "image": "",
+        "name": "Matt Brandon",
+        "status": "Entrepreneur"
+      }
+    ]
   }
 }

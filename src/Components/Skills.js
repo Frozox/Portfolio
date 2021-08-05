@@ -6,10 +6,10 @@ class Skills extends Component {
             var description = this.props.data.skillsdesc;
             var skills = this.props.data.skills.map(skill => {
                 return (
-                    <div class="progress">
-                        <span class="skill">{skill.name}<i class="val">{skill.percent}%</i></span>
-                        <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
+                    <div key={skill.name} className="progress">
+                        <span className="skill">{skill.name}<i className="val">{skill.percent}%</i></span>
+                        <div className="progress-bar-wrap">
+                            <div className="progress-bar" role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -20,17 +20,17 @@ class Skills extends Component {
         }
 
         return (
-            <section id="skills" class="skills section-bg">
-                <div class="container">
-                    <div class="section-title">
+            <section id="skills" className="skills section-bg">
+                <div className="container">
+                    <div className="section-title">
                         <h2>Compétences</h2>
                         <p>{description}</p>
                     </div>
-                    <div class="row skills-content">
-                        <div class="col-lg-6" data-aos="fade-up">
+                    <div className="row skills-content">
+                        <div className="col-lg-6" data-aos="fade-up">
                             {col1_skills}
                         </div>
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             {col2_skills}
                         </div>
                     </div>

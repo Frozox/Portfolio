@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import Typed from 'react-typed';
 
 class Home extends Component {
@@ -14,6 +15,9 @@ class Home extends Component {
                     <h1>{name}</h1>
                     <p>Je suis <Typed strings={hero} typeSpeed={70} backSpeed={80} loop /></p>
                 </div>
+                <Helmet>
+                    <script src="assets/js/vantaglobe.js"></script>
+                </Helmet>
             </section>
         ) : null;
     }
