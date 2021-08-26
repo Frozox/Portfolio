@@ -34,12 +34,10 @@
       "zip": "78000"
     },
     "website": "https://www.frozox.fr",
-    "resumedownload": "",
     "hero": [
-      "Designer",
-      "Développeur ",
-      "Freelancer",
-      "Photographe"
+      "Développeur FullStack",
+      "Développeur Logiciel",
+      "Intégrateur Web"
     ],
     "social": [
       {
@@ -55,10 +53,49 @@
     ]
   },
   "resume": {
-    "description": "'description résumé'",
-    "sumary": {},
-    "education": [],
-    "professional": []
+    "education": [
+      {
+        "name": "Licence Pro LPPRISM",
+        "date": "2020 - 2021",
+        "location": "IUT d'Orsay",
+        "summary": "Licence en alternance dans le domaine du développement Web (Laravel) et Mobile (Android Studio/Xcode)."
+      },
+      {
+        "name": "BTS SIO Option SLAM",
+        "date": "2018 - 2020",
+        "location": "Lycée Fulbert à Chartres",
+        "summary": "BTS en formation initiale orienté vers le développement Logiciel (C#) et Web (Symfony)."
+      },
+      {
+        "name": "Baccalauréat STI2D Option SIN",
+        "date": "2018",
+        "location": "Lycée Jehan de Beauce à Chartres",
+        "summary": "Baccalauréat orienté dans les systèmes d'information, numérique et électronique."
+      }
+    ],
+    "professional": [
+      {
+        "name": "Développeur Logiciel/Web en alternance",
+        "date": "2020 - 2021",
+        "location": "Société BLS à Colombes",
+        "summary": [
+          "Suivi et maintenance des logiciels de l'entreprise en C#",
+          "Gestion du site internet existant et refonte du site vitrine en PHP"
+        ],
+        "environement": "C#, HTML5, CSS3, PHP7, Ajax, MySQL, Windows, Linux"
+      },
+      {
+        "name": "Stage de développement SQL/BATCH",
+        "date": "2019 et suite en 2020",
+        "location": "Entreprise COVEA à Chartres",
+        "summary": [
+          "Gestion de bases de données Oracle",
+          "Batch d'automatisation d'envoi de mails en Java"
+        ],
+        "environement": "PL/SQL, Oracle, Java Maven, Windows"
+      }
+    ],
+    "resumedownload": "/CVs/CV_Tom_Cuillandre_2021_ESGI.pdf"
   },
   "portfolio": {
     "description": "'description portfolio'",

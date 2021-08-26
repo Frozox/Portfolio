@@ -13,7 +13,7 @@ class Home extends Component {
             <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
                 <div className="hero-container" data-aos="fade-in">
                     <h1>{name}</h1>
-                    <p>Je suis <Typed strings={hero} typeSpeed={70} backSpeed={80} loop /></p>
+                    <p>Je suis <Typed strings={hero} typeSpeed={60} backSpeed={50} loop /></p>
                 </div>
                 <Helmet>
                     <script src="assets/js/vantaglobe.js"></script>
