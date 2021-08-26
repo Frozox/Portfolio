@@ -5,29 +5,12 @@
     "age": 21,
     "degree": "licence PRISM",
     "occupation": "BLS",
-    "entitled": "Développeur Full stack Web/Mobile.",
-    "description": "'Description'",
-    "bio": "'biographie'",
+    "entitled": "Développeur FullStack Web/Mobile/Logiciel",
+    "bio": "Passionné d'escalade, je grimpe les parois avec minutie en toute sécurité. Ces mêmes qualités se retrouvent d'ailleurs dans mon travail. Développeur FullStack fiable et curieux, je me forme sur les dernières méthodes de travail et technologies. La sécurité étant mon mot d'ordre, je développe mes sites Web et API en concéquences.",
     "image": "assets/img/profile-img.jpg",
-    "backgroundImage": "",
     "contactmessage": "",
     "email": "tom.cuillandre@sfr.fr",
     "phone": "+33 6 30 32 12 29",
-    "skillsdesc": "'skills description'",
-    "skills": [
-      {
-        "name": "HTML",
-        "percent": 80
-      },
-      {
-        "name": "PHP",
-        "percent": 90
-      },
-      {
-        "name": "SQL",
-        "percent": 70
-      }
-    ],
     "address": {
       "city": "Versailles",
       "state": "Île-de-France",
@@ -36,6 +19,7 @@
     "website": "https://www.frozox.fr",
     "hero": [
       "Développeur FullStack",
+      "Développeur Mobile",
       "Développeur Logiciel",
       "Intégrateur Web"
     ],
@@ -52,6 +36,139 @@
       }
     ]
   },
+  "skills": [
+    {
+      "title": "Backend",
+      "skills": [
+        {
+          "name": "PHP7",
+          "percent": 100
+        },
+        {
+          "name": "NodeJS",
+          "percent": 70
+        }
+      ]
+    },
+    {
+      "title": "FrontEnd",
+      "skills": [
+        {
+          "name": "HTML5",
+          "percent": 90
+        },
+        {
+          "name": "CSS3/Bootstrap",
+          "percent": 60
+        },
+        {
+          "name": "Javascript",
+          "percent": 70
+        },
+        {
+          "name": "JQuery/Ajax",
+          "percent": 90
+        },
+        {
+          "name": "React",
+          "percent": 50
+        }
+      ]
+    },
+    {
+      "title": "Autres Langages",
+      "skills": [
+        {
+          "name": "C#",
+          "percent": 90
+        }
+      ]
+    },
+    {
+      "title": "Base de données",
+      "skills": [
+        {
+          "name": "SQL/Mysql",
+          "percent": 100
+        },
+        {
+          "name": "NoSql/MongoDB",
+          "percent": 70
+        },
+        {
+          "name": "Phpmyadmin",
+          "percent": 100
+        },
+        {
+          "name": "Mongo-Express",
+          "percent": 60
+        }
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "skills": [
+        {
+          "name": "Symfony",
+          "percent": 90
+        },
+        {
+          "name": "Laravel",
+          "percent": 60
+        },
+        {
+          "name": "Ionic",
+          "percent": 50
+        },
+        {
+          "name": "ExpressJs",
+          "percent": 70
+        }
+      ]
+    },
+    {
+      "title": "Outils",
+      "skills": [
+        {
+          "name": "Visual Studio Code",
+          "percent": 90
+        },
+        {
+          "name": "Visual Studio",
+          "percent": 80
+        },
+        {
+          "name": "PhpStorm",
+          "percent": 60
+        },
+        {
+          "name": "Androïd Studio",
+          "percent": 40
+        },
+        {
+          "name": "Xcode",
+          "percent": 40
+        },
+        {
+          "name": "Photoshop",
+          "percent": 60
+        }
+      ]
+    },
+    {
+      "title": "Langues",
+      "skills": [
+        {
+          "name": "Français",
+          "percent": 100
+        },
+        {
+          "name": "Anglais",
+          "percent": 60
+        }
+      ]
+    }
+  ],
   "resume": {
     "education": [
       {

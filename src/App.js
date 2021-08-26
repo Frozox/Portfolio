@@ -55,7 +55,7 @@ class App extends Component {
         <div id="main">
           <About data={this.state.data.main} />
           {/* <Facts /> */}
-          <Skills data={this.state.data.main} />
+          <Skills data={this.state.data.skills} />
           <Resume data={this.state.data.resume} />
           <Portfolio />
           {/* <Services /> */}

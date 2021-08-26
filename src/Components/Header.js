@@ -8,7 +8,7 @@ class Header extends Component {
          var image = this.props.data.image;
          var networks = this.props.data.social.map(network => {
             return (
-               <a key={network.name} href={network.url} className={network.name}><i className={network.className}></i></a>
+               <a key={network.name} className={network.name} href={network.url} target="_blank"><i className={network.className}></i></a>
             );
          });
       }
@@ -28,7 +28,7 @@ class Header extends Component {
                      <li><a href="#hero" className="nav-link scrollto active"><i className="bx bx-home"></i><span>Home</span></a></li>
                      <li><a href="#about" className="nav-link scrollto"><i className="bx bx-user"></i><span>À Propos</span></a></li>
                      <li><a href="#resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i><span>Mon CV</span></a></li>
-                     <li><a href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i><span>Portfolio</span></a></li>
+                     <li><a href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i><span>Mon Portfolio</span></a></li>
                      <li><a href="#testimonials" className="nav-link scrollto"><i className="bx bx-conversation"></i><span>Témoignages</span></a></li>
                      <li><a href="#contact" className="nav-link scrollto"><i className="bx bx-envelope"></i><span>Contact</span></a></li>
                   </ul>
