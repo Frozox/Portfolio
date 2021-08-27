@@ -146,6 +146,10 @@
           "percent": 40
         },
         {
+          "name": "Wordpress",
+          "percent": 50
+        },
+        {
           "name": "Xcode",
           "percent": 40
         },
@@ -215,8 +219,33 @@
     "resumedownload": "/CVs/CV_Tom_Cuillandre_2021_ESGI.pdf"
   },
   "portfolio": {
-    "description": "'description portfolio'",
-    "projets": []
+    "description": "Quelques projets que j'aimerai partager avec vous",
+    "projects": [
+      {
+        "name": "Pointk",
+        "filter": "filter-webapp",
+        "thumbnail": "/assets/img/portfolio/thumbnails/pointk.png",
+        "image": "/assets/img/portfolio/images/pointk.png"
+      },
+      {
+        "name": "Facebook",
+        "filter": "filter-web",
+        "thumbnail": "/assets/img/portfolio/thumbnails/facebook.png",
+        "image": "/assets/img/portfolio/images/facebook.png"
+      },
+      {
+        "name": "Portfolio",
+        "filter": "filter-webapp",
+        "thumbnail": "/assets/img/portfolio/thumbnails/portfolio.png",
+        "image": "/assets/img/portfolio/thumbnails/portfolio.png"
+      },
+      {
+        "name": "No Limite",
+        "filter": "filter-other",
+        "thumbnail": "/assets/img/portfolio/thumbnails/nolimite.png",
+        "image": "/assets/img/portfolio/images/nolimite.png"
+      }
+    ]
   },
   "testimonials": {
     "description": "témoignages description",

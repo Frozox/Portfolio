@@ -29,7 +29,7 @@ class Header extends Component {
                      <li><a href="#about" className="nav-link scrollto"><i className="bx bx-user"></i><span>À Propos</span></a></li>
                      <li><a href="#resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i><span>Mon CV</span></a></li>
                      <li><a href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i><span>Mon Portfolio</span></a></li>
-                     <li><a href="#testimonials" className="nav-link scrollto"><i className="bx bx-conversation"></i><span>Témoignages</span></a></li>
+                     {/* <li><a href="#testimonials" className="nav-link scrollto"><i className="bx bx-conversation"></i><span>Témoignages</span></a></li> */}
                      <li><a href="#contact" className="nav-link scrollto"><i className="bx bx-envelope"></i><span>Contact</span></a></li>
                   </ul>
                </nav>

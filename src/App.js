@@ -15,6 +15,7 @@ import Services from './Components/Services';
 import Testimonials from './Components/Testimonials';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import SimpleReactLightbox from 'simple-react-lightbox';
 class App extends Component {
 
   constructor(props) {
@@ -57,9 +58,11 @@ class App extends Component {
           {/* <Facts /> */}
           <Skills data={this.state.data.skills} />
           <Resume data={this.state.data.resume} />
-          <Portfolio />
+          <SimpleReactLightbox>
+            <Portfolio data={this.state.data.portfolio} />
+          </SimpleReactLightbox>
           {/* <Services /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
         </div>
         <Footer />
@@ -68,6 +71,7 @@ class App extends Component {
         <Helmet>
           <script src="assets/vendor/purecounter/purecounter.js"></script>
           <script src="assets/vendor/typed.js/typed.min.js"></script>
+          {/* <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> */}
           <script src="assets/js/main.js"></script>
         </Helmet>
       </div>
