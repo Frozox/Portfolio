@@ -225,7 +225,8 @@
         "name": "Pointk",
         "filter": "filter-webapp",
         "thumbnail": "/assets/img/portfolio/thumbnails/pointk.png",
-        "image": "/assets/img/portfolio/images/pointk.png"
+        "image": "/assets/img/portfolio/images/pointk.png",
+        "details": {}
       },
       {
         "name": "Facebook",
