@@ -13,7 +13,7 @@ class Skills extends Component {
                                     <div key={skill.name} className="progress">
                                         <span className="skill">{skill.name}<i className="val">{skill.percent}%</i></span>
                                         <div className="progress-bar-wrap">
-                                            <div className="progress-bar" role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
+                                            <div className="progress-bar" style={{background: category.color}} role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
                                                 aria-valuemax="100"></div>
                                         </div>
                                     </div>
@@ -26,7 +26,7 @@ class Skills extends Component {
                                     <div key={skill.name} className="progress">
                                         <span className="skill">{skill.name}<i className="val">{skill.percent}%</i></span>
                                         <div className="progress-bar-wrap">
-                                            <div className="progress-bar" role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
+                                            <div className="progress-bar" style={{background: category.color}} role="progressbar" aria-valuenow={skill.percent} aria-valuemin="0"
                                                 aria-valuemax="100"></div>
                                         </div>
                                     </div>

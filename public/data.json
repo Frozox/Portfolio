@@ -39,6 +39,7 @@
   "skills": [
     {
       "title": "Backend",
+      "color": "#226666",
       "skills": [
         {
           "name": "PHP7",
@@ -52,6 +53,7 @@
     },
     {
       "title": "FrontEnd",
+      "color": "#AA3939",
       "skills": [
         {
           "name": "HTML5",
@@ -77,6 +79,7 @@
     },
     {
       "title": "Autres Langages",
+      "color": "#AA6C39",
       "skills": [
         {
           "name": "C#",
@@ -86,6 +89,7 @@
     },
     {
       "title": "Base de données",
+      "color": "#277554",
       "skills": [
         {
           "name": "SQL/Mysql",
@@ -107,6 +111,7 @@
     },
     {
       "title": "Frameworks",
+      "color": "#1f5297",
       "skills": [
         {
           "name": "Symfony",
@@ -128,6 +133,7 @@
     },
     {
       "title": "Outils",
+      "color": "#582A72",
       "skills": [
         {
           "name": "Visual Studio Code",
@@ -161,6 +167,7 @@
     },
     {
       "title": "Langues",
+      "color": "#882D60",
       "skills": [
         {
           "name": "Français",
