@@ -1,18 +1,26 @@
-import { unique } from 'jquery';
-import React from 'react';
-import { Link } from 'react-router-dom';
-// import './css/notfound.css'
+import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
-const NotFound = () => (
-    <main className="bsod container">
-        <h1 className="neg title"><span className="bg">Error - 404</span></h1>
-        <p>An error has occured, to continue:</p>
-        <p>* Return to our homepage.<br />
-            * Send us an e-mail about this error and try later.</p>
-        <nav className="nav">
-            <Link to="/">index</Link>&nbsp;|&nbsp;<a href="#" className="link">webmaster</a>
-        </nav>
-    </main>
-);
+class NotFound extends Component{
+    render () {
+        return(
+            <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
+                <div className="hero-container">
+                    <h1>Erreur 4
+                        <i className="bx bx-sad bx-tada bx-md"></i>
+                        4
+                    </h1>
+                    <p>Page introuvable</p>
+                    <a href="/" className="d-grid">
+                        <button className="btn btn-outline-light btn-lg" type="button"><i class='bx bx-undo'></i>Retour à la page principale</button>
+                    </a>
+                </div>
+                <Helmet>
+                    <script src="assets/js/vantaglobe.js"></script>
+                </Helmet>
+            </section>
+        );
+    }
+}
 
 export default NotFound;

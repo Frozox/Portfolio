@@ -59,7 +59,7 @@ class App extends Component {
           </SimpleReactLightbox>
           {/* <Services /> */}
           {/* <Testimonials /> */}
-          <Contact />
+          <Contact data={this.state.data.main} />
         </div>
         <Footer />
         <a href="/#" className="back-to-top d-flex align-items-center justify-content-center"><i

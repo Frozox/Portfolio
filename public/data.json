@@ -14,7 +14,8 @@
     "address": {
       "city": "Versailles",
       "state": "Île-de-France",
-      "zip": "78000"
+      "zip": "78000",
+      "full": "10 Résidence La Roseraie 78000 Versailles"
     },
     "website": "https://www.frozox.fr",
     "hero": [
