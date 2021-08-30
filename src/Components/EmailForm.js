@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 
 class EmailForm extends Component {
   constructor(props) {
 	super(props);
-	this.state = { name: '', email: '', subject: '', feedback: '' };
+	this.state = { name: '', email: '', subject: '', feedback: '', captcha: false, 'g-recaptcha-response': '' };
+    this.recaptchaOnChange = this.recaptchaOnChange.bind(this);
 	this.handleChange = this.handleChange.bind(this);
 	this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -32,21 +34,27 @@ class EmailForm extends Component {
                         <label htmlFor="name">Message</label>
                         <textarea className="form-control" name="feedback" onChange={this.handleChange} value={this.state.feedback} rows="10" required></textarea>
                     </div>
+                    <div className="text-center">
+                        <ReCAPTCHA sitekey="6LdqMjUcAAAAAF6Q5Z_XcULfBRq8LnxEn7p4R1mG" name="recaptcha" onChange={this.recaptchaOnChange} />
+                        <button className="btn btn-outline-dark my-3 form-control" type="submit" onClick={this.handleSubmit}>Envoyer</button>
+                    </div>
                     <div className="my-3">
                         <div className="loading" id="loading">Chargement</div>
                         <div className="error-message" id="error-message">Un problème est survenu. Veuillez réessayer plus tard.</div>
                         <div className="sent-message" id="sent-message">Votre message a bien été envoyé. Merci !</div>
                     </div>
-                    <div className="text-center"><button className="btn btn-outline-dark" type="submit" onClick={this.handleSubmit} >Envoyer</button></div>
                 </form>
             </div>
         )
     }
 
+    recaptchaOnChange(value) {
+        this.setState({captcha: !this.state.captcha, 'g-recaptcha-response': value});
+    }
+
     handleChange(event) {
         const name = event.target.name;
         const value = event.target.value;
-
         this.setState({
             [name]: value
         });
@@ -57,14 +65,14 @@ class EmailForm extends Component {
 
         const form = $('#contact-form').get(0);
 
-        if(!form.checkValidity()){
+        if(!form.checkValidity() | !this.state.captcha){
             form.reportValidity();
         }
         else{
             $('#loading').show();
             $('#sent-message').hide();
             $('#error-message').hide();
-            this.sendFeedback({from_name: this.state.name, reply_to: this.state.email, subject: this.state.subject, message: this.state.feedback});
+            this.sendFeedback({from_name: this.state.name, reply_to: this.state.email, subject: this.state.subject, message: this.state.feedback, 'g-recaptcha-response': this.state['g-recaptcha-response']});
         }
     }
 
@@ -74,7 +82,7 @@ class EmailForm extends Component {
 
         emailjs.init("user_cOVbmmmpPDEOamjjiw2cC")
         emailjs.send(
-            serviceId, templateId,variables
+            serviceId, templateId, variables
         ).then(() => {
             $('#loading').hide();
             $('#sent-message').fadeIn('slow').delay(5000).fadeOut('slow');
