@@ -4,15 +4,15 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 
 class EmailForm extends Component {
-  constructor(props) {
-	super(props);
-	this.state = { name: '', email: '', subject: '', feedback: '', captcha: false, 'g-recaptcha-response': '' };
-    this.recaptchaOnChange = this.recaptchaOnChange.bind(this);
-	this.handleChange = this.handleChange.bind(this);
-	this.handleSubmit = this.handleSubmit.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { name: '', email: '', subject: '', feedback: '', captcha: false, 'g-recaptcha-response': '' };
+        this.recaptchaOnChange = this.recaptchaOnChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-  render() {
+    render() {
         return (
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                 <form action="" method="post" className="php-email-form" id="contact-form">
@@ -49,7 +49,7 @@ class EmailForm extends Component {
     }
 
     recaptchaOnChange(value) {
-        this.setState({captcha: !this.state.captcha, 'g-recaptcha-response': value});
+        this.setState({ captcha: !this.state.captcha, 'g-recaptcha-response': value });
     }
 
     handleChange(event) {
@@ -60,23 +60,23 @@ class EmailForm extends Component {
         });
     }
 
-    handleSubmit (event) {
+    handleSubmit(event) {
         event.preventDefault();
 
         const form = $('#contact-form').get(0);
 
-        if(!form.checkValidity() | !this.state.captcha){
+        if (!form.checkValidity() | !this.state.captcha) {
             form.reportValidity();
         }
-        else{
+        else {
             $('#loading').show();
             $('#sent-message').hide();
             $('#error-message').hide();
-            this.sendFeedback({from_name: this.state.name, reply_to: this.state.email, subject: this.state.subject, message: this.state.feedback, 'g-recaptcha-response': this.state['g-recaptcha-response']});
+            this.sendFeedback({ from_name: this.state.name, reply_to: this.state.email, subject: this.state.subject, message: this.state.feedback, 'g-recaptcha-response': this.state['g-recaptcha-response'] });
         }
     }
 
-    sendFeedback (variables) {
+    sendFeedback(variables) {
         const serviceId = 'service_tzbifqs';
         const templateId = 'template_5j2b9yh';
 

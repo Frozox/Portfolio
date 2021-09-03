@@ -230,6 +230,7 @@
     "description": "Quelques projets que j'aimerai partager avec vous",
     "projects": [
       {
+        "id": 0,
         "name": "Pointk",
         "filter": "filter-webapp",
         "thumbnail": "/assets/img/portfolio/thumbnails/pointk.png",
@@ -237,22 +238,28 @@
         "details": {}
       },
       {
+        "id": 1,
         "name": "Facebook",
         "filter": "filter-web",
         "thumbnail": "/assets/img/portfolio/thumbnails/facebook.png",
-        "image": "/assets/img/portfolio/images/facebook.png"
+        "image": "/assets/img/portfolio/images/facebook.png",
+        "details": {}
       },
       {
+        "id": 2,
         "name": "Portfolio",
         "filter": "filter-webapp",
         "thumbnail": "/assets/img/portfolio/thumbnails/portfolio.png",
-        "image": "/assets/img/portfolio/thumbnails/portfolio.png"
+        "image": "/assets/img/portfolio/thumbnails/portfolio.png",
+        "details": {}
       },
       {
+        "id": 3,
         "name": "No Limite",
         "filter": "filter-other",
         "thumbnail": "/assets/img/portfolio/thumbnails/nolimite.png",
-        "image": "/assets/img/portfolio/images/nolimite.png"
+        "image": "/assets/img/portfolio/images/nolimite.png",
+        "details": {}
       }
     ]
   },

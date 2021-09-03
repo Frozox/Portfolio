@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return this.state.data ? (
       <div className="App">
         <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
         <Header data={this.state.data.main} />
@@ -70,7 +70,7 @@ class App extends Component {
           <script src="assets/js/main.js"></script>
         </Helmet>
       </div>
-    );
+    ) : null;
   }
 }
 
