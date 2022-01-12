@@ -9,7 +9,7 @@ const Routes = () => {
     return (
         <Switch>
             <Route exact path='/' component={App}></Route>
-            <Route exact path='/portfolio/:id(\d+)' component={PortfolioDetails}></Route>
+            <Route exact path='/projets/:id' component={PortfolioDetails}></Route>
             <Route exact path='/404' component={NotFound}></Route>
             <Redirect to='/404' />
         </Switch>

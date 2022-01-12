@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets
+Disallow: /sockjs-node
+Allow: /assets/img
+Allow: /assets/pdf

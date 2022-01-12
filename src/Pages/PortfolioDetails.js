@@ -32,14 +32,14 @@ class PortfolioDetails extends Component {
   render() {
     var id = this.props.match.params.id;
     if (this.state.data.projects) {
-      var projects = this.state.data.projects;
+      var project = this.state.data.projects.find(pj => pj.id === id);
 
-      if (id > projects.length - 1) {
+      if(!project){
         return <Redirect to="/404" />;
       }
     }
 
-    return this.state.data.projects ? (
+    return project ? (
       <div className="className">
         <section id="breadcrumbs" className="breadcrumbs">
           <div className="container">
@@ -47,7 +47,7 @@ class PortfolioDetails extends Component {
               <h2>Portfoio Details</h2>
               <ol>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>Portfoio Details</li>
               </ol>
@@ -63,13 +63,13 @@ class PortfolioDetails extends Component {
                 <div className="portfolio-details-slider swiper-container">
                   <div className="swiper-wrapper align-items-center">
                   <div className="swiper-slide">
-                    <img src={projects[id].image} alt=""/>
+                    <img src={project.image} alt=""/>
                   </div>
                   <div className="swiper-slide">
-                    <img src={projects[id].image} alt=""/>
+                    <img src={project.image} alt=""/>
                   </div>
                   <div className="swiper-slide">
-                    <img src={projects[id].image} alt=""/>
+                    <img src={project.image} alt=""/>
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -91,7 +91,7 @@ class PortfolioDetails extends Component {
                   </li>
                   <li>
                     <strong>Project URL</strong>:{" "}
-                    <a href="#">www.example.com</a>
+                    <p>www.example.com</p>
                   </li>
                 </ul>
               </div>

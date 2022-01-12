@@ -120,7 +120,7 @@
         },
         {
           "name": "Laravel",
-          "percent": 60
+          "percent": 80
         },
         {
           "name": "Ionic",
@@ -224,13 +224,13 @@
         "environement": "PL/SQL, Oracle, Java Maven, Windows"
       }
     ],
-    "resumedownload": "/CVs/CV_Tom_Cuillandre_2021_ESGI.pdf"
+    "resumedownload": "/assets/pdf/CV_Tom_Cuillandre_2021_ESGI.pdf"
   },
   "portfolio": {
     "description": "Quelques projets que j'aimerai partager avec vous",
     "projects": [
       {
-        "id": 0,
+        "id": "pointk-geeps",
         "name": "Pointk",
         "filter": "filter-webapp",
         "thumbnail": "/assets/img/portfolio/thumbnails/pointk.png",
@@ -238,7 +238,7 @@
         "details": {}
       },
       {
-        "id": 1,
+        "id": "facebook-lpprism",
         "name": "Facebook",
         "filter": "filter-web",
         "thumbnail": "/assets/img/portfolio/thumbnails/facebook.png",
@@ -246,7 +246,7 @@
         "details": {}
       },
       {
-        "id": 2,
+        "id": "portfolio",
         "name": "Portfolio",
         "filter": "filter-webapp",
         "thumbnail": "/assets/img/portfolio/thumbnails/portfolio.png",
@@ -254,8 +254,8 @@
         "details": {}
       },
       {
-        "id": 3,
-        "name": "No Limite",
+        "id": "no-limit",
+        "name": "No Limit",
         "filter": "filter-other",
         "thumbnail": "/assets/img/portfolio/thumbnails/nolimite.png",
         "image": "/assets/img/portfolio/images/nolimite.png",
@@ -264,13 +264,13 @@
     ]
   },
   "testimonials": {
-    "description": "témoignages description",
+    "description": "",
     "comments": [
       {
-        "texte": "1er commentaire",
+        "texte": "",
         "image": "",
-        "name": "Matt Brandon",
-        "status": "Entrepreneur"
+        "name": "",
+        "status": ""
       }
     ]
   }

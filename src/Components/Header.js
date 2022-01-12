@@ -8,7 +8,7 @@ class Header extends Component {
          var image = this.props.data.image;
          var networks = this.props.data.social.map(network => {
             return (
-               <a key={network.name} className={network.name} href={network.url} target="_blank"><i className={network.className}></i></a>
+               <a key={network.name} className={network.name} href={network.url} target="_blank" rel="noopener noreferrer"><i className={network.className}></i></a>
             );
          });
       }
@@ -18,7 +18,7 @@ class Header extends Component {
             <div className="d-flex flex-column">
                <div className="profile">
                   <img src={image} alt="" className="img-fluid rounded-circle" />
-                  <h1 className="text-light"><a href="index.html">{name}</a></h1>
+                  <h1 className="text-light">{name}</h1>
                   <div className="social-links mt-3 text-center">
                      {networks}
                   </div>

@@ -13,7 +13,7 @@ class Portfolio extends Component {
                                 <img src={project.thumbnail} className="img-fluid portfolio-img" alt="" />
                             </a>
                             <div className="portfolio-links">
-                                <a href={`/portfolio/${project.id}`}><i className="bx bx-comment-detail"></i></a>
+                                <a href={`/projets/${project.id}`}><i className="bx bx-comment-detail"></i></a>
                             </div>
                         </div>
                     </div>

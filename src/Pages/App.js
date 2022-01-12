@@ -61,7 +61,7 @@ class App extends Component {
           {/* <Testimonials /> */}
           <Contact data={this.state.data.main} />
         </div>
-        <Footer />
+        {/* <Footer /> */}
         <a href="/#" className="back-to-top d-flex align-items-center justify-content-center"><i
           className="bi bi-arrow-up-short"></i></a>
         <Helmet>

@@ -37,7 +37,7 @@ class Resume extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="text-center">
-                                <a className="btn btn-outline-dark btn-lg" href={resumedownload} target="_blank"><i className='bx bxs-download' ></i><span>Télécharger mon CV</span></a>
+                                <a className="btn btn-outline-dark btn-lg" href={resumedownload} target="_blank" rel="noopener noreferrer"><i className='bx bxs-download' ></i><span>Télécharger mon CV</span></a>
                             </div>
                         </div>
                     </div>
